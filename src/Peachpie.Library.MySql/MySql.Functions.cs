@@ -206,7 +206,7 @@ namespace Peachpie.Library.MySql
             // see http://dev.mysql.com/doc/refman/5.5/en/connector-net-connection-options.html
             return BuildConnectionString(
               server, user, password,
-              string.Format("allowzerodatetime=true;allow user variables=true;connect timeout={0};Port={1};SSL Mode={2};Use Compression={3}{4}{5};Max Pool Size={6}{7}{8}",
+              string.Format("allowzerodatetime=true;allow user variables=true;connection reset=false;connectionidlepingtime=0;connect timeout={0};Port={1};SSL Mode={2};Use Compression={3}{4}{5};Max Pool Size={6}{7}{8}",
                 (connectiontimeout > 0) ? connectiontimeout : (config.ConnectTimeout > 0) ? config.ConnectTimeout : 15,
                 port,
                 (flags & ConnectFlags.SSL) != 0 ? "Preferred" : "None",     // (since Connector 6.2.1.) ssl mode={None|Preferred|Required|VerifyCA|VerifyFull}   // (Jakub) use ssl={true|false} has been deprecated
