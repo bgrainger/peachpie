@@ -2,7 +2,7 @@
 
   <Import Project="..\..\build\Targets\Settings.props" />
   <PropertyGroup>
-    <TargetFrameworks>net46;netstandard1.5</TargetFrameworks>
+    <TargetFrameworks>netstandard1.5</TargetFrameworks>
     <NoWarn>$(NoWarn);1591</NoWarn>
     <AssemblyName>Peachpie.CodeAnalysis</AssemblyName>
     <AssemblyOriginatorKeyFile>../../build/StrongKeys/core.snk</AssemblyOriginatorKeyFile>

@@ -2,7 +2,7 @@
 
   <Import Project="..\..\..\build\Targets\Settings.props" />
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.6;net46</TargetFrameworks>
+    <TargetFrameworks>netstandard1.6</TargetFrameworks>
     <PreserveCompilationContext>true</PreserveCompilationContext>
     <AssemblyName>Peachpie.Library.PDO.Firebird</AssemblyName>
     <PackageId>Peachpie.Library.PDO.Firebird</PackageId>
