@@ -71,7 +71,7 @@ namespace Peachpie.Library.MySql
             var reader = (MySqlDataReader)this.Reader;
             if (reader != null)
             {
-                reader.Close(); // non virtual!!
+                reader.Dispose(); // non virtual!!
             }
 
             base.FreeManaged();
